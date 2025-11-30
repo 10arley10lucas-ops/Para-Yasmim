@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Yasmim 💖</title>
+
+    <!-- Fonte moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            height: 100vh;
+            background: radial-gradient(circle at top, #ffb3c6, #ff6f91, #b30059);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Corações flutuantes */
+        .love-heart {
+            position: absolute;
+            font-size: 20px;
+            color: rgba(255,255,255,0.8);
+            animation: floatHeart 6s infinite linear;
+        }
+
+        @keyframes floatHeart {
+            0% { transform: translateY(0) scale(1); opacity: 0.8; }
+            50% { transform: translateY(-50vh) scale(1.5); opacity: 1; }
+            100% { transform: translateY(-100vh) scale(1); opacity: 0; }
+        }
+
+        /* cartão */
+        .card {
+            background: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(12px);
+            border-radius: 25px;
+            padding: 40px;
+            text-align: center;
+            width: 80%;
+            max-width: 700px;
+            color: #fff;
+            box-shadow: 0 0 25px rgba(255,255,255,0.25);
+            animation: fadeIn 1s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .heart {
+            font-size: 60px;
+            animation: pulse 1.2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.25); }
+            100% { transform: scale(1); }
+        }
+
+        button {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 30px;
+            background: #ff2e6c;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.07);
+            background: #ff0f54;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Corações flutuantes animados -->
+    <div class="love-heart" style="left:10%; animation-delay:0s;">❤️</div>
+    <div class="love-heart" style="left:20%; animation-delay:1s;">💖</div>
+    <div class="love-heart" style="left:35%; animation-delay:2s;">💞</div>
+    <div class="love-heart" style="left:50%; animation-delay:1.5s;">❤️</div>
+    <div class="love-heart" style="left:65%; animation-delay:0.5s;">💖</div>
+    <div class="love-heart" style="left:80%; animation-delay:2.5s;">💞</div>
+
+    <!-- cartão principal -->
+    <div class="card">
+        <h1>Para Yasmim Vitória Gomes Silva 💕</h1>
+        <div class="heart">❤️</div>
+        <p>
+            Yasmim, meu amor… Eu te amo de um jeito que às vezes nem sei explicar.  
+            Eu sei que não sou perfeito, eu sei que erro, que tropeço, que às vezes falho sem querer…  
+            Mas a única coisa que eu nunca deixo de fazer é <strong>tentar ser o meu melhor todos os dias</strong> — por você.  
+            <br><br>
+            Você me inspira, me acalma, me faz querer evoluir.  
+            Cada sorriso seu muda o meu mundo, cada mensagem sua ilumina meu dia,  
+            e cada momento ao seu lado me mostra que vale a pena crescer, aprender e melhorar.  
+            <br><br>
+            Eu te amo, Yasmim.  
+            Amo seu jeito, sua voz, sua presença, suas manias… amo tudo.  
+            Prometo continuar tentando sempre, porque ver você feliz é tudo pra mim. 💗
+        </p>
+
+        <button onclick="alert('Yasmim, eu te amo! ❤️')">Clique aqui, meu amor</button>
+    </div>
+
+</body>
+</html>
